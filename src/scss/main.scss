@@ -21,26 +21,22 @@ body {
   min-height: 100vh;
 }
 
-.main{
-  max-width: 448px;
-  width: 100%;
-}
-
-.header{
-  font-weight: 600;
-  font-size: 44px;
-  margin: 0;
-  margin-bottom: 16px;
-}
-
 .form{
   &__action {
     margin-top: 16px;
     display: flex;
     justify-content: space-between;
   }
-  &__wrapper {
-
+  &__button{
+    min-width: 200px;
+    border-radius: 8px;
+    padding: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    &--save{
+      background: #EE0C0C;
+      color: #FFFFFF;
+    }
   }
   &__label {
     display: block;
@@ -54,24 +50,16 @@ body {
     min-height: 240px;
     padding: 12px;
   }
-  &__button{
-    min-width: 200px;
-    border-radius: 8px;
-    padding: 16px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    &--save{
-      background: #EE0C0C;
-      color: #FFFFFF;
-    }
-  }
-
 }
 
-.form__action{
-
+.header{
+  font-weight: 600;
+  font-size: 44px;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
-.form__button{
-
+.main{
+  max-width: 448px;
+  width: 100%;
 }
