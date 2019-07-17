@@ -1,9 +1,11 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 
 html {
   box-sizing: border-box;
+  font-family: 'Open Sans';
 }
 
 *, *:before, *:after {
@@ -11,6 +13,65 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  color: #FAFAFC;
+  background: #232735;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main{
+  max-width: 448px;
+  width: 100%;
+}
+
+.header{
+  font-weight: 600;
+  font-size: 44px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.form{
+  &__action {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__wrapper {
+
+  }
+  &__label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  &__message{
+    width: 100%;
+    border-radius: 8px;
+    background: #FAFAFC;
+    min-height: 240px;
+    padding: 12px;
+  }
+  &__button{
+    min-width: 200px;
+    border-radius: 8px;
+    padding: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    &--save{
+      background: #EE0C0C;
+      color: #FFFFFF;
+    }
+  }
+
+}
+
+.form__action{
+
+}
+
+.form__button{
+
 }
